@@ -1,8 +1,15 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        int n = 5;
-        int resultadoFinal = factorial(n);
-        System.out.println("Resultado: " + resultadoFinal);
+        int n = 8;
+        //int resultadoFinal = factorial(n);
+        //System.out.println("Resultado: " + resultadoFinal);
+
+        EjerciciosRecursivos e = new EjerciciosRecursivos();
+        int fibo = e.fibonacci(n);
+        System.out.println(fibo);
+
+        int result = e.sumaConsecutivos(3);
+        System.out.println(result);
         
     }
 
