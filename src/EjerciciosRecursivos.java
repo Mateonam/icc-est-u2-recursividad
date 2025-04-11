@@ -16,4 +16,28 @@ public class EjerciciosRecursivos {
         int resultado = n + resultadoParcial;
         return resultado;
     }
+
+    public int getPotencia (int num, int exp) {
+        if (exp == 0) {
+            return 1;
+        } else if (exp == 1) {
+            return num;
+        }
+
+        int resultadoMomentaneo = getPotencia(num, exp - 1);
+        int resultadofinal = num * resultadoMomentaneo;
+        System.out.println(num + " * " + resultadoMomentaneo + " = " + resultadofinal );
+        return resultadofinal;        
+    }
+
+    public int sumaDeDigitos (int numero) {
+        if (numero < 10) {
+            return numero;
+        }
+        int ultDigito = numero %10;
+        int resupuesta = sumaDeDigitos(numero/10);
+        System.out.println(ultDigito + " + " + resupuesta);
+        return ultDigito + resupuesta;
+
+    }
 }
