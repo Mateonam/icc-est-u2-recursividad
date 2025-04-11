@@ -16,6 +16,12 @@ public class App {
 
         int result = e.sumaDeDigitos(125);
         System.out.println("Resultado final: " + result);
+
+        int rsp = e.cuentaRegresiva(5);
+        System.out.println(rsp);
+
+        int numf = e.reverso(54321);
+        System.out.println(numf);
         
     }
 

@@ -40,4 +40,23 @@ public class EjerciciosRecursivos {
         return ultDigito + resupuesta;
 
     }
+
+    public int cuentaRegresiva(int n) {
+        if (n == 1) {
+           return n;
+        }
+        System.out.print(n-- + " ");
+        int result = cuentaRegresiva(n);
+        return result ;
+    }
+
+    public int reverso(int n) {
+        if (n < 10) {
+            return n;
+        }
+        int ult = n%10;
+        System.out.print(ult);
+        int resultado = reverso(n/10);
+        return resultado;
+    }
 }
